@@ -14,9 +14,8 @@ const CurrentlyReading = (props) => {
         <ol className="books-grid">
           {currentReading.map((book) => (
             <Book 
+              book={book}
               key={book.id}
-              title={book.title}
-              image={book.imageLinks.thumbnail}
             />
           ))}
         </ol>

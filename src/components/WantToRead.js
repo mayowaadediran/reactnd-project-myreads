@@ -13,9 +13,8 @@ import Book from './Book'
           <ol className="books-grid">
             {read.map((book) => (
               <Book 
-                 key={book.id}
-                title={book.title}
-                image={book.imageLinks.thumbnail}
+                book={book}
+                key={book.id}
               />
             ))}
               

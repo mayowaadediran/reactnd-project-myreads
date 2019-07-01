@@ -14,9 +14,8 @@ const Read = (props) => {
             {read.map((book) => {
               return (
                 <Book 
+                  book={book}
                   key={book.id}
-                  title={book.title}
-                  image={book.imageLinks.thumbnail}
                 />
               )
             })}
